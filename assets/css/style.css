@@ -1,0 +1,48 @@
+@import url(fontawesome-all.min.css);
+
+/* Elements */
+:root {
+  --color-background: #abd1c6;
+  --color-paragraph: #0f3433;
+  --color-subheadline: #0f3433;
+  --color-headline: #001e1d;
+  --color-paragraph: #abd1c6;
+  /* a cor de botão é a mesma do --color-link: #f9bc60; */
+  --color-link: #f9bc60;
+
+  /* cores uteis para a página produtos  */
+  --background-products: #004643;
+  --headline: #fffffe;
+  --card-headline: #001e1d;
+  --card-paragraph: #004643;
+  --card-background: #e8e4e6;
+}
+
+/* Estilização para tirar a barra de Rolamento da pagina */
+/* Chrome, Safari e Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.home {
+  background-color: var(--color-background);
+  color: var(--color-subheadline);
+}
+
+.home h1 > p {
+  color: var(--color-paragraph);
+}
+
+.custom-navbar {
+  background-color: var(--color-background) !important;
+  color: var(--color-headline);
+  padding: 1rem 2rem;
+}
