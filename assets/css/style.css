@@ -2,7 +2,7 @@
 
 /* Elements */
 :root {
-  --color-background: #abd1c6;
+  --color-background-light: #abd1c6;
   --color-paragraph: #0f3433;
   --color-subheadline: #0f3433;
   --color-headline: #001e1d;
@@ -42,7 +42,7 @@ body::-webkit-scrollbar {
 }
 
 .custom-navbar {
-  background-color: var(--color-background) !important;
+  background-color: var(--color-background-light) !important;
   color: var(--color-headline);
   padding: 1rem 2rem;
 }
