@@ -1,0 +1,226 @@
+:root {
+  --color-background: #abd1c6;
+  --color-paragraph: #0f3433;
+  --color-subheadline: #0f3433;
+  --color-headline: #001e1d;
+  --color-paragraph: #abd1c6;
+  --color-link: #f9bc60;
+
+  --background-products: #004643;
+  --headline: #fffffe;
+  --card-headline: #001e1d;
+  --card-paragraph: #004643;
+  --card-background: #e8e4e6;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.localizacao-container {
+  position: relative;
+  height: 100vh;
+  background: var(--color-background);
+}
+
+.mapa-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1) contrast(1.2);
+  opacity: 0.4;
+}
+
+.mapa-background iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.contato-card {
+  position: relative;
+  background: var(--headline);
+  width: 90%;
+  max-width: 450px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  top: 40%;
+}
+
+.contato-titulo {
+  color: var(--color-subheadline);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contato-descricao {
+  color: #0f3433;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.endereco-item {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  color: var(--card-paragraph);
+}
+
+.endereco-icone {
+  width: 24px;
+  height: 24px;
+  margin: 0 8px;
+}
+
+.contato-rodape {
+  color: var(--color-paragraph);
+  font-size: 0.75rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contato-card {
+    margin: 0rem 2rem 0 auto;
+    width: 40%;
+  }
+}
+
+/* Estilos lojas */
+.lojas-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  padding: 4rem 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: var(--color-headline);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.section-description {
+  color: var(--card-headline);
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.lojas-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.lojas-subcontainer {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.loja-card {
+  position: relative;
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+
+.loja-imagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background: var(--headline);
+  border-color: var(--color-background);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-overlay:hover {
+  opacity: 1;
+}
+
+.endereco {
+  color: var(--color-paragraph);
+  font-weight: bold;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.loja-nome {
+  font-size: 1.25rem;
+  color: var(--card-headline);
+  margin: 1rem 0;
+}
+
+.loja-descricao {
+  color: var(--card-paragraph);
+  line-height: 1.6;
+}
+
+.icone-pequeno {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .loja-card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .lojas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contato-card {
+    background: var(--headline);
+  }
+}
+
+@media (min-width: 1024px) {
+  .lojas-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .loja-card {
+    width: 100%;
+    padding: 0;
+  }
+}
