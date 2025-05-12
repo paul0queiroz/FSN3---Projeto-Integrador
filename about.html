@@ -1,336 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <title>Padoca - Padaria dos Sonhos</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
-  <title>Padoca - Padaria dos Sonhos</title>
-</head>
-  <body>
-    <!-- NAVBAR FIXA -->
-      <nav class="navbar navbar-expand-lg custom-navbar" aria-label="Tenth navbar example" id="navbar">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08"
-        aria-controls="navbarsExample08" aria-expanded="true" aria-label="Toggle navigation"> <span
-          class="navbar-toggler-icon"></span> </button>
-      <div class="navbar-collapse justify-content-md-center collapse show" id="navbarsExample08">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sobre.html">Sobre</a>
-          </li>
-          <li class="nav-item"> 
-            <a class="nav-link active" href="produtos.html">Produtos</a> 
-          </li>
-        </ul>
+
+<body>
+  <nav class="navbar navbar-expand-lg custom-navbar" aria-label="Tenth navbar example" id="navbar">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse justify-content-md-center collapse show" id="navbarsExample08">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="location.html">Localização</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+  <!-- Corpo principal do documento -->
+  <div id="main">
+    <div id="home">
+
+      <div id="cta">
+        <h1>Aqui o aroma é digital, mas o sabor é <span>real</span></h1>
+        
+        <p class="description">
+          Nossa missão é levar até você pães fresquinhos, doces artesanais e quitutes de dar água na boca, tudo feito com ingredientes selecionados e aquele toque caseiro que faz toda a diferença.
+        </p>
+
+        <div class="button-group">
+          <a href="products.html" class="custom-button-regular">Nosso cardápio</a>
+          <a href="location.html" class="custom-button-regular">Onde estamos?</a>
+        </div>
+      </div>
+
+      <div id="banner">
+        <img src="images/about/cream-cake.png" alt="imagem de bolo">
       </div>
     </div>
-  </nav>
-    <!-- NAVBAR FIXA -->
 
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint nostrum, debitis autem necessitatibus natus recusandae, harum perspiciatis, adipisci aliquid pariatur sunt laborum labore maxime dolore nesciunt! Nisi laborum minus tempore.
+    </p>
+  </div>
 
-      <!-- Main -->
-      <div id="main">
-        <div class="inner">
-          <h1>Elements</h1>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
-          <!-- Text -->
-          <section>
-            <h2>Text</h2>
-            <p>
-              This is <b>bold</b> and this is <strong>strong</strong>. This is
-              <i>italic</i> and this is <em>emphasized</em>. This is
-              <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-              This is <u>underlined</u> and this is code:
-              <code>for (;;) { ... }</code>. Finally,
-              <a href="#">this is a link</a>.
-            </p>
-            <hr />
-            <p>
-              Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida
-              odio porttitor sem non mi integer non faucibus ornare mi ut ante
-              amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem
-              accumsan varius montes viverra nibh in adipiscing blandit tempus
-              accumsan.
-            </p>
-            <hr />
-            <h2>Heading Level 2</h2>
-            <h3>Heading Level 3</h3>
-            <h4>Heading Level 4</h4>
-            <hr />
-            <h3>Blockquote</h3>
-            <blockquote>
-              Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
-              sagittis eget tempus euismod. Vestibulum ante ipsum primis in
-              faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat
-              ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in
-              faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.
-            </blockquote>
-            <h3>Preformatted</h3>
-            <pre><code>i = 0;
+  <!-- Rodapé -->
+   <div class="container custom-footer">
+    <footer class="p-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link px-2 text-body-emphasis">Início</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link px-2 text-body-secondary">Sobre Nós</a>
+        </li>
+        <li class="nav-item">
+          <a href="products.html" class="nav-link px-2 text-body-secondary">Produtos</a>
+        </li>
+        <li class="nav-item">
+          <a href="location.html" class="nav-link px-2 text-body-secondary">Nossas Lojas</a>
+        </li>
+      </ul>
+      
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Entre em contato!</h5>
+          <p>Dê sugestões de pratos para adicionarmos ao nosso cardápio</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-4 p-2">
+            <label for="email" class="visually-hidden">Email</label>
+            <input id="contact1" type="email" class="form-control" placeholder="Email Adress"/>
+            <button class="custom-button-light" type="button">Enviar</button>
+          </div>
+          
+          <div class="d-flex flex-column flex-sm-row w-100 gap-4 p-1">
+            <label for="message" class="visually-hidden">Mensagem</label>
+            <textarea id="contact2" class="form-control" placeholder="Mensagem" rows="3"></textarea>
+          </div>
+        </form>
+        
+        <p class="text-body-tertiary text-center">
+          © 2025 Company, Inc. All rights reserved.
+        </p>
+      </footer>
+    </div>
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-          </section>
-
-          <!-- Lists -->
-          <section>
-            <h2>Lists</h2>
-            <div class="row">
-              <div class="col-6 col-12-medium">
-                <h3>Unordered</h3>
-                <ul>
-                  <li>Dolor pulvinar etiam.</li>
-                  <li>Sagittis adipiscing.</li>
-                  <li>Felis enim feugiat.</li>
-                </ul>
-                <h3>Alternate</h3>
-                <ul class="alt">
-                  <li>Dolor pulvinar etiam.</li>
-                  <li>Sagittis adipiscing.</li>
-                  <li>Felis enim feugiat.</li>
-                </ul>
-              </div>
-              <div class="col-6 col-12-medium">
-                <h3>Ordered</h3>
-                <ol>
-                  <li>Dolor pulvinar etiam.</li>
-                  <li>Etiam vel felis viverra.</li>
-                  <li>Felis enim feugiat.</li>
-                  <li>Dolor pulvinar etiam.</li>
-                  <li>Etiam vel felis lorem.</li>
-                  <li>Felis enim et feugiat.</li>
-                </ol>
-                <h3>Icons</h3>
-                <ul class="icons">
-                  <li>
-                    <a href="#" class="icon brands style1 fa-twitter"
-                      ><span class="label">Twitter</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="icon brands style1 fa-facebook-f"
-                      ><span class="label">Facebook</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="icon brands style1 fa-instagram"
-                      ><span class="label">Instagram</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="icon brands style1 fa-github"
-                      ><span class="label">Github</span></a
-                    >
-                  </li>
-                </ul>
-                <ul class="icons">
-                  <li>
-                    <a href="#" class="icon brands style2 fa-twitter"
-                      ><span class="label">Twitter</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="icon brands style2 fa-facebook-f"
-                      ><span class="label">Facebook</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="icon brands style2 fa-instagram"
-                      ><span class="label">Instagram</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="icon brands style2 fa-github"
-                      ><span class="label">Github</span></a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <h2>Actions</h2>
-            <div class="row">
-              <div class="col-6 col-12-medium">
-                <ul class="actions">
-                  <li><a href="#" class="button primary">Default</a></li>
-                  <li><a href="#" class="button">Default</a></li>
-                </ul>
-                <ul class="actions small">
-                  <li><a href="#" class="button primary small">Small</a></li>
-                  <li><a href="#" class="button small">Small</a></li>
-                </ul>
-                <ul class="actions stacked">
-                  <li><a href="#" class="button primary">Default</a></li>
-                  <li><a href="#" class="button">Default</a></li>
-                </ul>
-                <ul class="actions stacked">
-                  <li><a href="#" class="button primary small">Small</a></li>
-                  <li><a href="#" class="button small">Small</a></li>
-                </ul>
-              </div>
-              <div class="col-6 col-12-medium">
-                <ul class="actions stacked">
-                  <li><a href="#" class="button primary fit">Default</a></li>
-                  <li><a href="#" class="button fit">Default</a></li>
-                </ul>
-                <ul class="actions stacked">
-                  <li>
-                    <a href="#" class="button primary small fit">Small</a>
-                  </li>
-                  <li><a href="#" class="button small fit">Small</a></li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          <!-- Table -->
-          <section>
-            <h2>Table</h2>
-            <h3>Default</h3>
-            <div class="table-wrapper">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Item One</td>
-                    <td>Ante turpis integer aliquet porttitor.</td>
-                    <td>29.99</td>
-                  </tr>
-                  <tr>
-                    <td>Item Two</td>
-                    <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                    <td>19.99</td>
-                  </tr>
-                  <tr>
-                    <td>Item Three</td>
-                    <td>Morbi faucibus arcu accumsan lorem.</td>
-                    <td>29.99</td>
-                  </tr>
-                  <tr>
-                    <td>Item Four</td>
-                    <td>Vitae integer tempus condimentum.</td>
-                    <td>19.99</td>
-                  </tr>
-                  <tr>
-                    <td>Item Five</td>
-                    <td>Ante turpis integer aliquet porttitor.</td>
-                    <td>29.99</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td colspan="2"></td>
-                    <td>100.00</td>
-                  </tr>
-                </tfoot>
-              </table>
-            </div>
-
-            <h3>Alternate</h3>
-            <div class="table-wrapper">
-              <table class="alt">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Item One</td>
-                    <td>Ante turpis integer aliquet porttitor.</td>
-                    <td>29.99</td>
-                  </tr>
-                  <tr>
-                    <td>Item Two</td>
-                    <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                    <td>19.99</td>
-                  </tr>
-                  <tr>
-                    <td>Item Three</td>
-                    <td>Morbi faucibus arcu accumsan lorem.</td>
-                    <td>29.99</td>
-                  </tr>
-                  <tr>
-                    <td>Item Four</td>
-                    <td>Vitae integer tempus condimentum.</td>
-                    <td>19.99</td>
-                  </tr>
-                  <tr>
-                    <td>Item Five</td>
-                    <td>Ante turpis integer aliquet porttitor.</td>
-                    <td>29.99</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td colspan="2"></td>
-                    <td>100.00</td>
-                  </tr>
-                </tfoot>
-              </table>
-            </div>
-          </section>
-
-          <!-- Buttons -->
-          <section>
-            <h3>Buttons</h3>
-            <ul class="actions">
-              <li><a href="#" class="button primary">Primary</a></li>
-              <li><a href="#" class="button">Default</a></li>
-            </ul>
-            <ul class="actions">
-              <li><a href="#" class="button large">Large</a></li>
-              <li><a href="#" class="button">Default</a></li>
-              <li><a href="#" class="button small">Small</a></li>
-            </ul>
-            <ul class="actions fit">
-              <li><a href="#" class="button primary fit">Fit</a></li>
-              <li><a href="#" class="button fit">Fit</a></li>
-              <li><a href="#" class="button fit">Fit</a></li>
-            </ul>
-            <ul class="actions fit small">
-              <li>
-                <a href="#" class="button primary fit small">Fit + Small</a>
-              </li>
-              <li><a href="#" class="button fit small">Fit + Small</a></li>
-              <li><a href="#" class="button fit small">Fit + Small</a></li>
-            </ul>
-            <ul class="actions">
-              <li>
-                <a href="#" class="button primary icon solid fa-download"
-                  >Icon</a
-                >
-              </li>
-              <li><a href="#" class="button icon solid fa-upload">Icon</a></li>
-              <li><a href="#" class="button icon solid fa-save">Icon</a></li>
-            </ul>
-            <ul class="actions">
-              <li><span class="button primary disabled">Disabled</span></li>
-              <li><span class="button disabled">Disabled</span></li>
-            </ul>
-          </section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
