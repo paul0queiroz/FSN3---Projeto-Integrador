@@ -1,57 +1,48 @@
-/* Configurações para o painel inicial da página sobre */
-#home{
+#main{
     background-image: url("../../images/about/background-food.jpg");
-    width: 100%;
-    height: calc(100vh - 56px);
+    min-height: calc(100vh - 56px);
 
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
     gap: 10px;
     padding: 10px 0px;
 }
 
-#cta{
-    width: 50%;
-    height: 100%;
-    padding: 100px;
-
-    background-color: rgba(240, 248, 255, 0.932);
-    border-radius: 25%;
-
+#we-are, #our-mission{
+    padding: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 10px;
+    background-color: rgba(240, 248, 255, 0.945);
+    margin: 10px;
+    border-radius: 100px;
 }
 
-#cta h1, #cta span{
-    font-family: "Poppins", serif;
-    font-variant: small-caps;
-    font-size: 2.2rem;
+.section-title{
     text-align: center;
-    padding: 10px;
+    align-items: flex-end;
     font-weight: 600;
-}
-
-#cta span{
-    color: rgb(224, 200, 60);
-}
-
-#cta .description{
-    text-indent: 1.5em;
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: justify;
-}
-
-#banner img{
-    border-radius: 40%;
-}
-
-.custom-button-regular, .custom-button-light{
+    color: rgb(211, 128, 19);
     padding: 10px;
+}
+
+.section-description{
+    text-align: justify;
+    align-items: flex-end;
+    font-weight: 400;
+    padding: 0px 100px;
+    text-indent: 1.5rem;
+    font-size: 1.2rem;
+}
+
+#we-are img, #our-mission img{
+    width: 300px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+#we-are span, #our-mission span{
+    width: 100%;
 }
 
 /* Desabilita as animações dos botões na tela de sobre */
@@ -65,60 +56,21 @@
     }
 }
 
-/* Configurações para as sections */
-#our-mission, #forms-of-service{
-    width: 100%;
-    background-color: aliceblue;
-    padding: 10px;
+/* Media Queries */
+@media (max-width: 800px){
+    #we-are, #our-mission{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-title{
-    font-size: 1.5rem;
-}
-
-.section-subtitle{
-    font-size: 2rem;
-}
-
-/* Media queries */
-@media (max-width: 1100px){
-    #cta{
-        border-radius: 0;
+    #we-are span, #our-mission span{
         width: 100%;
+        text-align: center;
     }
 
-    .button-group{
-        flex-direction: row;
-        gap: 20px;
-    }
-
-    .custom-button-light, .custom-button-regular{
-        padding: 10px;
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 600px){
-    #cta, #cta h1{
-        padding: 5px;
-    }
-
-    .custom-button-light, .custom-button-regular{
-        padding: 10px;
-        font-size: 1rem;
-    }
-
-    #cta h1{
-        font-size: 2rem;
-    }
-
-    #cta .description{
-        font-size: 1.2rem;
-        padding: 10px;
+    #we-are img, #our-mission img{
+        width: 300px;
+        border-radius: 50%;
     }
 }
