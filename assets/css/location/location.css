@@ -7,6 +7,7 @@
   --color-headline: #001e1d;
   --color-paragraph: #abd1c6;
   --color-link: #f9bc60;
+  --bg-color-nav: rgb(171, 209, 198);
 
   --background-products: #004643;
   --headline: #fffffe;
@@ -19,6 +20,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+.custom-navbar {
+  background-color: var(--bg-color-nav) !important;
+  color: var(--color-headline);
+  justify-content: space-between;
 }
 
 .localizacao-container {
