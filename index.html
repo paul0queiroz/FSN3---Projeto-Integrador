@@ -1,109 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <title>Padoca - Padaria dos Sonhos</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
-  <title>Padoca - Padaria dos Sonhos</title>
-</head>
-
-<body class="home">
-  <nav class="navbar navbar-expand-lg custom-navbar" aria-label="Tenth navbar example" id="navbar">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08"
-        aria-controls="navbarsExample08" aria-expanded="true" aria-label="Toggle navigation"> <span
-          class="navbar-toggler-icon"></span> </button>
-      <div class="navbar-collapse justify-content-md-center collapse show" id="navbarsExample08" style="">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sobre.html">Sobre</a>
-          </li>
-          <li class="nav-item"> 
-            <a class="nav-link" href="produtos.html">Produtos</a> 
-          </li>
-        </ul>
+  <body class="home">
+    <nav
+      class="navbar navbar-expand-lg custom-navbar"
+      aria-label="Tenth navbar example"
+      id="navbar"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample08"
+          aria-controls="navbarsExample08"
+          aria-expanded="true"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="navbar-collapse justify-content-md-center collapse show"
+          id="navbarsExample08"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="location.html">Localização</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- Main -->
-  <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div>
-        <img src="images/bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
-          width="500" height="500" loading="lazy">
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer id="footer">
-    <div class="inner">
-      <section>
-        <h2>Get in touch</h2>
-        <form method="post" action="#">
-          <div class="fields">
-            <div class="field half">
-              <input type="text" name="name" id="name" placeholder="Name" />
-            </div>
-            <div class="field half">
-              <input type="email" name="email" id="email" placeholder="Email" />
-            </div>
-            <div class="field">
-              <textarea name="message" id="message" placeholder="Message"></textarea>
+    </nav>
+    <!-- Main -->
+    <section class="hero">
+      <div class="container col-xxl-8 px-4 py-5">
+         <div class="row flex-lg-row-reverse align-items-center g-5 py-5"> 
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="images/bootstrap-themes.png"
+              class="d-block mx-lg-auto img-fluid shadow-img"
+              alt="Bootstrap Themes"
+              width="500"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">
+              Responsive left-aligned hero with image
+            </h1>
+            <p class="lead">
+              Using a series of utilities, you can create this hero unit with a
+              background image and a description.
+            </p>
+            <div class="button-group">
+              <a href="products.html" class="custom-button-light"
+                >Conheça nossos produtos!</a
+              >
+              <a href="location.html" class="custom-button-regular"
+                >Onde estamos?</a
+              >
             </div>
           </div>
-          <ul class="actions">
-            <li><input type="submit" value="Send" class="primary" /></li>
-          </ul>
-        </form>
-      </section>
-      <section>
-        <h2>Follow</h2>
-        <ul class="icons">
-          <li>
-            <a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a>
+        </div>
+      </div>
+    </section>
+    <div class="container custom-footer">
+      <footer class="p-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link px-2 text-body-emphasis"
+              >Início</a
+            >
           </li>
-          <li>
-            <a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link px-2 text-body-secondary"
+              >Sobre Nós</a
+            >
           </li>
-          <li>
-            <a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link px-2 text-body-secondary"
+              >Produtos</a
+            >
           </li>
-          <li>
-            <a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a>
-          </li>
-          <li>
-            <a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a>
-          </li>
-          <li>
-            <a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a>
-          </li>
-          <li>
-            <a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a>
-          </li>
-          <li>
-            <a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a>
+          <li class="nav-item">
+            <a href="location.html" class="nav-link px-2 text-body-secondary"
+              >Nossas Lojas</a
+            >
           </li>
         </ul>
-      </section>
-      <ul class="copyright">
-        <li>&copy; Untitled. All rights reserved</li>
-        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-      </ul>
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Entre em contato!</h5>
+            <p>Dê sugestões de pratos para adicionarmos ao nosso cardápio</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-4 p-2">
+              <label for="email" class="visually-hidden">Email</label>
+              <input
+                id="contact1"
+                type="email"
+                class="form-control"
+                placeholder="Email Adress"
+              />
+              <button class="custom-button-light" type="button">Enviar</button>
+            </div>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-4 p-1">
+              <label for="message" class="visually-hidden">Mensagem</label>
+              <textarea
+                id="contact2"
+                class="form-control"
+                placeholder="Mensagem"
+                rows="3"
+              ></textarea>
+          </form>
+        </div>
+        <p class="text-body-tertiary text-center">
+          © 2025 Company, Inc. All rights reserved.
+        </p>
+      </footer>
     </div>
-  </footer>
-  </div>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-    crossorigin="anonymous"></script>
-</body>
-
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
