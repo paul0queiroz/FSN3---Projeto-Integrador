@@ -4,18 +4,86 @@
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 40px;
     padding: 10px 0px;
 }
 
-#we-are, #our-mission{
+#we-are, #our-mission, #testimonials{
     padding: 10px;
     display: flex;
     align-items: center;
     gap: 10px;
     background-color: rgba(240, 248, 255, 0.945);
-    margin: 10px;
+    margin: auto;
+    max-width: 1250px;
+    width: 100%;
     border-radius: 100px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.2);
+}
+
+#testimonials{
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+#testimonials-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feedback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(224, 237, 248);
+    padding: 20px 30px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+.feedback img{
+    width: 120px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+.feedback-content{
+    width: 80%;
+    text-align: center;
+}
+
+.feedback-info{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.feedback-info .feedback-username{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.feedback-info span{
+    color: orange;
+    margin-left: auto;
+}
+
+.feedback-description{
+    text-align: justify;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: normal;
+    text-indent: 1.5rem;
+    width: 700px;
+    line-height: 1.8rem;
+}
+
+#testimonials-content .section-title{
+    padding-top: 20px;
 }
 
 .section-title{
@@ -24,6 +92,7 @@
     font-weight: 600;
     color: rgb(211, 128, 19);
     padding: 10px;
+    width: 100%;
 }
 
 .section-description{
@@ -36,13 +105,19 @@
 }
 
 #we-are img, #our-mission img{
-    width: 300px;
+    width: 250px;
     border-radius: 50%;
     aspect-ratio: 1/1;
+    transition: all 0.8s ease;
+}
+
+#we-are img:hover, #our-mission img:hover{
+    transform: scale(1.05);
 }
 
 #we-are span, #our-mission span{
-    width: 100%;
+    text-align: right;
+    padding-right: 10px;
 }
 
 /* Desabilita as animações dos botões na tela de sobre */
@@ -72,5 +147,29 @@
     #we-are img, #our-mission img{
         width: 300px;
         border-radius: 50%;
+    }
+
+    .section-description{
+        padding: 0px 10px;
+    }
+}
+
+@media (max-width: 900px){
+    #testimonials{
+        border-end-end-radius: 0px;
+        border-end-start-radius: 0px;
+    }
+
+    .feedback{
+        flex-direction: column;
+    }
+
+    .feedback-info span{
+        margin: 0;
+        width: 50%;
+    }
+
+    .feedback-content .feedback-description{
+        width: 100%;
     }
 }
