@@ -5,24 +5,29 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+
     padding: 10px 0px;
 }
 
 #we-are, #our-mission, #testimonials{
-    padding: 10px;
+    background-color: rgba(240, 248, 255, 0.945);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: rgba(240, 248, 255, 0.945);
+    
     margin: auto;
+    padding: 10px;
+
     max-width: 1250px;
-    width: 100%;
-    border-radius: 100px;
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.2);
+    width: 100%;    
 }
 
 #testimonials{
     flex-direction: column;
+
     padding-top: 0px;
     padding-bottom: 20px;
 }
@@ -30,18 +35,22 @@
 #testimonials-content{
     display: flex;
     flex-direction: column;
+
     gap: 10px;
 }
 
 .feedback{
+    background-color: rgb(224, 237, 248);
+
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: rgb(224, 237, 248);
+    
     padding: 20px 30px;
-    border-radius: 50px;
     margin-bottom: 10px;
+
+    border-radius: 50px;
 }
 
 .feedback img{
@@ -73,12 +82,14 @@
 }
 
 .feedback-description{
-    text-align: justify;
     padding: 10px;
+    width: 700px;
+
     font-size: 1.1rem;
     font-weight: normal;
+
+    text-align: justify;
     text-indent: 1.5rem;
-    width: 700px;
     line-height: 1.8rem;
 }
 
@@ -87,19 +98,22 @@
 }
 
 .section-title{
-    text-align: center;
-    align-items: flex-end;
-    font-weight: 600;
     color: rgb(211, 128, 19);
+    align-items: flex-end;
+
+    text-align: center;
+    font-weight: 600;
+
     padding: 10px;
     width: 100%;
 }
 
 .section-description{
-    text-align: justify;
     align-items: flex-end;
-    font-weight: 400;
     padding: 0px 100px;
+
+    text-align: justify;
+    font-weight: 400;
     text-indent: 1.5rem;
     font-size: 1.2rem;
 }
@@ -147,6 +161,7 @@
     #we-are img, #our-mission img{
         width: 300px;
         border-radius: 50%;
+        padding-bottom: 20px;
     }
 
     .section-description{
@@ -162,14 +177,42 @@
 
     .feedback{
         flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .feedback-info span{
-        margin: 0;
+        margin-left: auto;
         width: 50%;
+    }
+
+    .feedback-info .feedback-username
+    {
+        font-weight: 600;
+        font-size: 1.2rem;
     }
 
     .feedback-content .feedback-description{
         width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .feedback-info{
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 10px;
+    }
+
+    .feedback-info .feedback-username{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .feedback-info span{
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
 }
