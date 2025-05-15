@@ -226,3 +226,67 @@
     padding: 0;
   }
 }
+
+.custom-navbar {
+  background-color: var(--bg-color-nav) !important;
+  color: var(--color-headline);
+}
+
+.custom-button-light {
+  display: inline-block;
+  padding: 3px 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: rgba(249, 189, 98, 0.75);
+  border: none;
+  border-radius: 20px 0px;
+  transition: all 0.8s ease;
+}
+
+.custom-button-regular {
+  display: inline-block;
+  padding: 3px 6px;
+  color: var(--color-);
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: var(--card-background);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0px 6px #004643;
+  transition: all 0.8s ease;
+  z-index: inherit;
+}
+
+a.custom-button-light,
+a.custom-button-regular {
+  text-decoration: none;
+  color: inherit; /* herda a cor do botão (definida no button ou no container) */
+  display: inline-block; /* necessário se o <a> estiver estilizado como botão */
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .custom-button-regular:hover {
+    background-color: #001e1d;
+    color: var(--color-paragraph);
+    transform: scale(1.5);
+  }
+
+  .custom-button-light:hover {
+    background-color: #e3a953;
+    transform: scale(1.5);
+  }
+}
+
+.custom-button-light,
+.custom-button-regular {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.custom-button-light:focus,
+.custom-button-regular:focus {
+  outline: 2px solid #e3a953;
+  outline-offset: 2px;
+  transition: all 0.8s ease;
+}
