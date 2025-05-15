@@ -15,6 +15,12 @@
   --card-paragraph: #004643;
   --card-background: #e8e4e6;
 }
+
+/* Estilização para tirar a barra de Rolamento da pagina */
+/* Chrome, Safari e Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
 * {
   margin: 0;
   padding: 0;

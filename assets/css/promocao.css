@@ -22,7 +22,6 @@ body {
   color: var(--cor-texto);
 }
 
-
 .promo-topo {
   background: var(--cor-borda);
   color: var(--cor-branco);
@@ -64,6 +63,7 @@ body {
 .promo__destaque h2,
 .promo__grid h2 {
   font-size: 28px;
+  padding-top: 20px;
   margin-bottom: 20px;
   border-bottom: 2px dashed var(--cor-texto);
   padding-bottom: 5px;
@@ -140,7 +140,6 @@ body {
   margin-bottom: 10px;
 }
 
-
 .rodape {
   background: var(--cor-borda);
   color: var(--cor-branco);
@@ -148,8 +147,6 @@ body {
   padding: 20px;
   margin-top: 40px;
 }
-
-
 
 .navbar {
   background-color: var(--cor-fundo);
@@ -196,7 +193,6 @@ body {
 .navbar-links li a.active {
   color: var(--cor-preco);
 }
-
 
 @media (max-width: 768px) {
   .navbar-toggle {

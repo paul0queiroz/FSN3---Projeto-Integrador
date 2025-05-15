@@ -13,7 +13,7 @@
     <title>Padoca - Padaria dos Sonhos</title>
   </head>
 
-  <body class="home">
+  <body>
     <nav
       class="navbar navbar-expand-lg custom-navbar"
       aria-label="Tenth navbar example"
@@ -60,10 +60,10 @@
     <!-- Main -->
     <section class="hero">
       <div class="container col-xxl-8 px-4 py-5">
-         <div class="row flex-lg-row-reverse align-items-center g-5 py-5"> 
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
             <img
-              src="images/bootstrap-themes.png"
+              src="images/hero.avif"
               class="d-block mx-lg-auto img-fluid shadow-img"
               alt="Bootstrap Themes"
               width="500"
@@ -73,11 +73,10 @@
           </div>
           <div class="col-lg-6">
             <h1 class="display-5 fw-bold lh-1 mb-3">
-              Responsive left-aligned hero with image
+              Fermentação Natural. Sofisticação Essencial.
             </h1>
             <p class="lead">
-              Using a series of utilities, you can create this hero unit with a
-              background image and a description.
+              Receitas autorais, ingredientes puros, ambiente acolhedor.
             </p>
             <div class="button-group">
               <a href="products.html" class="custom-button-light"
@@ -91,7 +90,40 @@
         </div>
       </div>
     </section>
-    <div class="container custom-footer">
+
+    <section class="cardapio" id="cardapio">
+      <h2 class="fw-bold">Nosso Cardápio Irresistível</h2>
+      <p>Venha se deliciar em nossos diferenciais</p>
+      <p>
+        Conheça três dos nossos clássicos que conquistam corações (e
+        paladares!).
+      </p>
+      <div class="produtos">
+        <div class="produto">
+          <img src="images/milfolhas.png" alt="Mil Folhas de Morango" />
+          <h3>Mil Folhas de Morango</h3>
+          <p>Camadas crocantes, creme leve e morangos frescos. Puro encanto!</p>
+        </div>
+        <div class="produto">
+          <img
+            src="images/croissant.amanteigado.jpeg"
+            alt="Croissant Amanteigado"
+          />
+          <h3>Croissant Amanteigado</h3>
+          <p>
+            Folhado com manteiga de verdade e uma textura que derrete na boca.
+          </p>
+        </div>
+        <div class="produto">
+          <img src="images/baguete.jpg" alt="Baguete Rústica" />
+          <h3>Baguete Rústica</h3>
+          <p>
+            Crocância por fora, maciez por dentro. Ideal para qualquer ocasião.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="container">
       <footer class="p-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
@@ -137,6 +169,7 @@
                 placeholder="Mensagem"
                 rows="3"
               ></textarea>
+            </div>
           </form>
         </div>
         <p class="text-body-tertiary text-center">
