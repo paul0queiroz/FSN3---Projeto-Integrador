@@ -13,7 +13,7 @@
     <title>Padoca - Padaria dos Sonhos</title>
   </head>
 
-  <body class="home">
+  <body class="home" class="hero">
     <nav
       class="navbar navbar-expand-lg custom-navbar"
       aria-label="Tenth navbar example"
@@ -57,9 +57,42 @@
         </div>
       </div>
     </nav>
-    <!-- Main -->
-    <section class="hero">
-      <div class="container col-xxl-8 px-4 py-5">
+
+    <div class="accordion accordion-flush" id="accordionFlushExample" style="margin:20px">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+         Qual o horário de funcionamento da padaria?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Nossa padaria abre todos os dias às 6h da manhã e funciona até as 20h.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Vocês aceitam encomendas para eventos ou ocasiões especiais?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Sim, aceitamos encomendas com prazer! Para discutir detalhes e prazos, pedimos que entre em contato conosco com antecedência.</div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        A padaria oferece opções para pessoas com restrições alimentares?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Estamos sempre buscando atender a todos os nossos clientes. Por favor, converse com um de nossos atendentes para saber sobre as opções disponíveis para dietas específicas.</div>
+    </div>
+  </div>
+</div>
+
+<div class="container col-xxl-8 px-4 py-5">
          <div class="row flex-lg-row-reverse align-items-center g-5 py-5"> 
           <div class="col-10 col-sm-8 col-lg-6">
             <img
@@ -73,25 +106,71 @@
           </div>
           <div class="col-lg-6">
             <h1 class="display-5 fw-bold lh-1 mb-3">
-              Responsive left-aligned hero with image
+              Atenção às Suas Necessidades
             </h1>
             <p class="lead">
-              Using a series of utilities, you can create this hero unit with a
-              background image and a description.
+              Acreditamos que o sabor deve ser para todos. Por isso, nos esforçamos para oferecer opções que atendam a diferentes necessidades alimentares. Se você possui alguma restrição, como intolerância ao glúten ou à lactose, converse com nossa equipe. Teremos prazer em apresentar as alternativas disponíveis e ajudá-lo a encontrar algo delicioso que você possa aproveitar sem preocupações.
             </p>
-            <div class="button-group">
-              <a href="products.html" class="custom-button-light"
-                >Conheça nossos produtos!</a
-              >
-              <a href="location.html" class="custom-button-regular"
-                >Onde estamos?</a
-              >
             </div>
           </div>
         </div>
       </div>
     </section>
     <div class="container custom-footer">
+      <footer class="p-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link px-2 text-body-emphasis"
+              >Início</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link px-2 text-body-secondary"
+              >Sobre Nós</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link px-2 text-body-secondary"
+              >Produtos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="location.html" class="nav-link px-2 text-body-secondary"
+              >Nossas Lojas</a
+            >
+          </li>
+        </ul>
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Entre em contato!</h5>
+            <p>Dê sugestões de pratos para adicionarmos ao nosso cardápio</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-4 p-2">
+              <label for="email" class="visually-hidden">Email</label>
+              <input
+                id="contact1"
+                type="email"
+                class="form-control"
+                placeholder="Email Adress"
+              />
+              <button class="custom-button-light" type="button">Enviar</button>
+            </div>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-4 p-1">
+              <label for="message" class="visually-hidden">Mensagem</label>
+              <textarea
+                id="contact2"
+                class="form-control"
+                placeholder="Mensagem"
+                rows="3"
+              ></textarea>
+          </form>
+        </div>
+        <p class="text-body-tertiary text-center">
+          © 2025 Company, Inc. All rights reserved.
+        </p>
+      </footer>
+    </div>
+
+<div class="container custom-footer" style="padding: 60px; margin: 40px;">
       <footer class="p-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
