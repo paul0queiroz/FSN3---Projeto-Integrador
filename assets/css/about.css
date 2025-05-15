@@ -1,0 +1,76 @@
+#main{
+    background-image: url("../../images/about/background-food.jpg");
+    min-height: calc(100vh - 56px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+#we-are, #our-mission{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(240, 248, 255, 0.945);
+    margin: 10px;
+    border-radius: 100px;
+}
+
+.section-title{
+    text-align: center;
+    align-items: flex-end;
+    font-weight: 600;
+    color: rgb(211, 128, 19);
+    padding: 10px;
+}
+
+.section-description{
+    text-align: justify;
+    align-items: flex-end;
+    font-weight: 400;
+    padding: 0px 100px;
+    text-indent: 1.5rem;
+    font-size: 1.2rem;
+}
+
+#we-are img, #our-mission img{
+    width: 300px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+#we-are span, #our-mission span{
+    width: 100%;
+}
+
+/* Desabilita as animações dos botões na tela de sobre */
+@media (hover: hover) and (pointer: fine) {
+    .custom-button-regular:hover {
+        transform: none;
+    }
+
+    .custom-button-light:hover {
+        transform: none;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 800px){
+    #we-are, #our-mission{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #we-are span, #our-mission span{
+        width: 100%;
+        text-align: center;
+    }
+
+    #we-are img, #our-mission img{
+        width: 300px;
+        border-radius: 50%;
+    }
+}
